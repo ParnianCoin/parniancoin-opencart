@@ -1,0 +1,36 @@
+<?php
+// Parnian Pay — generated language file
+$_['heading_title'] = 'بوابة برنيان (برنيان كوين)';
+$_['text_extension'] = 'الإضافات';
+$_['text_success'] = 'تم حفظ الإعدادات.';
+$_['text_edit'] = 'تعديل بوابة برنيان';
+$_['text_parnian_pay'] = '<a href="https://pay.parniancoin.com" target="_blank"><img src="view/image/payment/parnian_pay.svg" alt="Parnian Pay" title="Parnian Pay" style="height:25px" /></a>';
+$_['text_intro'] = 'اقبل برنيان كوين (PARC). تنتقل المدفوعات مباشرة من محفظة المشتري إلى حساب PARC الخاص بك؛ ويُحدَّد سعر PARC في لوحة تحكم بوابة برنيان (أسعار التحويل).';
+$_['text_connection'] = 'الاتصال';
+$_['text_order_statuses'] = 'حالات الطلب';
+$_['text_general'] = 'عام';
+$_['text_all_zones'] = 'كل المناطق';
+$_['entry_api_key'] = 'مفتاح API';
+$_['entry_webhook_secret'] = 'مفتاح توقيع Webhook';
+$_['entry_gateway_url'] = 'عنوان البوابة';
+$_['entry_expires'] = 'مهلة الدفع (بالدقائق)';
+$_['entry_geo_zone'] = 'المنطقة الجغرافية';
+$_['entry_debug'] = 'سجل التصحيح';
+$_['entry_status'] = 'الحالة';
+$_['entry_sort_order'] = 'ترتيب العرض';
+$_['entry_status_pending'] = 'بانتظار الدفع';
+$_['entry_status_paid'] = 'مدفوع ومؤكد';
+$_['entry_status_expired'] = 'انتهت دون دفع';
+$_['entry_status_review'] = 'تحتاج مراجعة (دفع جزئي / متأخر)';
+$_['help_api_key'] = 'يبدأ بـ pk_live_. أنشئه في لوحة تحكم بوابة برنيان. يُحفظ على خادمك فقط.';
+$_['help_webhook_secret'] = 'يبدأ بـ whsec_ ويظهر في قسم Webhook في لوحة تحكم بوابة برنيان.';
+$_['help_rates'] = 'لا يُحدَّد سعر PARC هنا: أضف سعرًا لعملة متجرك في لوحة تحكم بوابة برنيان ← أسعار التحويل.';
+$_['text_webhook_help'] = 'اضبط عنوان Webhook هذا في لوحة تحكم بوابة برنيان: %s';
+$_['text_conn_failed'] = 'بوابة برنيان: فشل الاتصال — %s';
+$_['text_not_active'] = 'بوابة برنيان: تم الاتصال باسم «%s»، لكن البوابة غير مفعّلة بعد (الحالة: %s). تُرفض المدفوعات حتى يوافق المسؤول.';
+$_['text_connected'] = 'بوابة برنيان: تم الاتصال باسم «%s» — البوابة مفعّلة.';
+$_['text_no_rate'] = 'بوابة برنيان: لا يوجد سعر تحويل لـ %s في لوحة تحكم بوابة برنيان — لن يظهر برنيان كوين عند الدفع حتى تضيفه.';
+$_['text_rate'] = 'بوابة برنيان: السعر الحالي 1 PARC = %s %s.';
+$_['text_no_secret'] = 'بوابة برنيان: مفتاح توقيع Webhook فارغ — لن تُؤكَّد المدفوعات إلا عند عودة المشترين إلى متجرك.';
+$_['error_permission'] = 'تحذير: ليست لديك صلاحية تعديل بوابة برنيان!';
+$_['error_api_key'] = 'أدخل مفتاح API صالحًا (pk_live_...) لتفعيل البوابة.';
