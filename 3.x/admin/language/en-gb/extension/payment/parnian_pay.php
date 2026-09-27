@@ -1,0 +1,36 @@
+<?php
+// Parnian Pay — generated language file
+$_['heading_title'] = 'Parnian Pay (ParnianCoin)';
+$_['text_extension'] = 'Extensions';
+$_['text_success'] = 'Settings saved.';
+$_['text_edit'] = 'Edit Parnian Pay';
+$_['text_parnian_pay'] = '<a href="https://pay.parniancoin.com" target="_blank"><img src="view/image/payment/parnian_pay.svg" alt="Parnian Pay" title="Parnian Pay" style="height:25px" /></a>';
+$_['text_intro'] = 'Accept ParnianCoin (PARC). Payments go directly from the buyer’s wallet to your own PARC account; the PARC price is set in your Parnian Pay dashboard (Conversion rates).';
+$_['text_connection'] = 'Connection';
+$_['text_order_statuses'] = 'Order statuses';
+$_['text_general'] = 'General';
+$_['text_all_zones'] = 'All Zones';
+$_['entry_api_key'] = 'API key';
+$_['entry_webhook_secret'] = 'Webhook signing secret';
+$_['entry_gateway_url'] = 'Gateway address';
+$_['entry_expires'] = 'Payment window (minutes)';
+$_['entry_geo_zone'] = 'Geo Zone';
+$_['entry_debug'] = 'Debug log';
+$_['entry_status'] = 'Status';
+$_['entry_sort_order'] = 'Sort Order';
+$_['entry_status_pending'] = 'Awaiting payment';
+$_['entry_status_paid'] = 'Paid and confirmed';
+$_['entry_status_expired'] = 'Expired without payment';
+$_['entry_status_review'] = 'Needs review (partial / late payment)';
+$_['help_api_key'] = 'Starts with pk_live_. Create it in your Parnian Pay dashboard. Kept on your server only.';
+$_['help_webhook_secret'] = 'Starts with whsec_. Shown in the Webhook section of your Parnian Pay dashboard.';
+$_['help_rates'] = 'The PARC price is not set here: add a rate for your store currency in the Parnian Pay dashboard → Conversion rates.';
+$_['text_webhook_help'] = 'Set this Webhook URL in your Parnian Pay dashboard: %s';
+$_['text_conn_failed'] = 'Parnian Pay: connection failed — %s';
+$_['text_not_active'] = 'Parnian Pay: connected as "%s", but the gateway is not active yet (status: %s). Payments are refused until an administrator approves it.';
+$_['text_connected'] = 'Parnian Pay: connected as "%s" — gateway active.';
+$_['text_no_rate'] = 'Parnian Pay: no conversion rate is set for %s in your Parnian Pay dashboard — ParnianCoin will not be offered at checkout until you add one.';
+$_['text_rate'] = 'Parnian Pay: current rate 1 PARC = %s %s.';
+$_['text_no_secret'] = 'Parnian Pay: the webhook signing secret is empty — payments will only be confirmed when buyers return to your store.';
+$_['error_permission'] = 'Warning: You do not have permission to modify Parnian Pay!';
+$_['error_api_key'] = 'Enter a valid API key (pk_live_...) to enable the gateway.';

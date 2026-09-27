@@ -1,0 +1,30 @@
+<p>{{ text_description }}</p>
+<div class="buttons">
+  <div class="pull-right">
+    <input type="button" value="{{ button_confirm }}" id="button-confirm" data-loading-text="{{ text_loading }}" class="btn btn-primary" />
+  </div>
+</div>
+<script type="text/javascript"><!--
+$('#button-confirm').on('click', function() {
+	$.ajax({
+		url: 'index.php?route=extension/payment/parnian_pay/confirm',
+		type: 'post',
+		dataType: 'json',
+		beforeSend: function() { $('#button-confirm').button('loading'); },
+		success: function(json) {
+			$('.alert-dismissible').remove();
+			if (json['error']) {
+				$('#button-confirm').button('reset');
+				$('#collapse-checkout-confirm .panel-body').prepend('<div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+			}
+			if (json['redirect']) {
+				location = json['redirect'];
+			}
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			$('#button-confirm').button('reset');
+			console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+});
+//--></script>
